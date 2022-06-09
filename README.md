@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# Project-Spotlight
+<img width="60%" height="20%" alt="project spotlight logo" src="https://user-images.githubusercontent.com/92189031/169386257-d1b60103-aff4-4eb2-8b00-54a4f811c129.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Spotlight is a **crime tracking and visualization application** that allows the public to search Chicago city crime data by offense and location. The intended use of this project is to provide an avenue for those who wish to find the safest streets to commute through, live in, or visit. Our data, which is updated daily, can additionally be used for research, personal, or educational purposes!
 
-## Available Scripts
+*All data is provided by the City of Chicago and published at:
+https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present-Dashboard/5cd6-ry5g*
 
-In the project directory, you can run:
+### Project Spotlight is built using React, TypeScript, JavaScript, Node.js, Express.
+#### To start this application, run the following commands in the terminal:
+1. $ npm install
+2. Procure a geocoding API token from [geoapify](https://www.geoapify.com/)
+3. place REACT_APP_GEOCODE_API=YOUR_TOKEN in a .env.local file at the topmost level of your repo
+3. $ npm run start
 
-### `npm start`
+### App Functionality
+Project Spotlight allows users to search Chicago crimes by type of crime and date range. In addition, users have the option to filter based on specific crime types, location, and radius
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<img src="https://github.com/Mountain-Everest/project-spotlight/blob/main/gifs/app.gif" width="60%" height="60%" />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Limitations
+Each filter is limited by the capabilities of The City of Chicago's API. Users can click a question mark to obtain a better understanding of each limitation.
 
-### `npm test`
+<img src="https://github.com/Mountain-Everest/project-spotlight/blob/main/gifs/limitations.gif" width="60%" height="60%" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Footer
+Users are able to download the search results as CSV files, visit the City of Chicago raw crime data, and visit the LinkedIn page of each contributor.
 
-### `npm run build`
+<img src="https://github.com/Mountain-Everest/project-spotlight/blob/main/gifs/footer.gif" width="60%" height="60%" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### App Functionality
+Project Spotlight allows users to search Chicago crimes by type of crime and date range. In addition, users have the option to filter based on specific crime types, location, and radius
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="https://github.com/Mountain-Everest/project-spotlight/blob/main/gifs/app.gif" width="60%" height="60%" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Limitations
+Each filter is limited by the capabilities of The City of Chicago's API. Users can click a question mark to obtain a better understanding of each limitation.
 
-### `npm run eject`
+<img src="https://github.com/Mountain-Everest/project-spotlight/blob/main/gifs/limitations.gif" width="60%" height="60%" />
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Footer
+Users are able to download the search results as CSV files, visit the City of Chicago raw crime data, and visit the LinkedIn page of each contributor.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="https://github.com/Mountain-Everest/project-spotlight/blob/main/gifs/footer.gif" width="60%" height="60%" />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Contributors
+- Anisah Majeed { [Github](https://github.com/yellowstrings) || [LinkedIn](https://www.linkedin.com/in/yellowstrings/) }
+- Charles Wilshire { [Github](https://github.com/clwilshire) || [LinkedIn](https://www.linkedin.com/in/charles-wilshire/) }
+- Teresa Gobble { [Github](https://github.com/TeresaGobble) || [LinkedIn](https://www.linkedin.com/in/teresa-gobble/) }
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

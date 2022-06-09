@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { CrimesContextProvider } from './CrimesContext';
+import Dropdowns from './components/Dropdowns';
+import SearchTable from './components/SearchTable';
+import Footer from './components/Footer';
+import CrimeMap from './components/CrimeMap';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    //note that CrimesContextProvider acts as a wrapper, and provides a shared global scope to all that are inside it no matter the nested level.
+    <div id="app-root">
+      <img className="logo" alt="binoculars" src="https://i.imgur.com/22s0voU.png"></img>
+      <h1 className="title" >Project Spotlight</h1>
+        <CrimesContextProvider>
+          <div className="dropdown">
+          <Dropdowns />
+          </div>
+          <SearchTable />
+          <Footer />
+          <div className="map">
+            <CrimeMap />
+          </div>
+        </CrimesContextProvider>
+      <div className="note" >Note: if a crime does not specify a location, it will not render on the map.</div>
     </div>
   );
-}
+};
 
 export default App;
