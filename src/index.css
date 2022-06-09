@@ -1,0 +1,268 @@
+/* This ensures that all the items have padding and border included in their width and height */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(467deg, rgba(307, 220, 209, .85), rgba(266, 195, 170, .8), rgba(207, 167, 157, 0.85)), url(https://i.imgur.com/FfRdiH3.jpg);
+  background-size: cover;
+}
+
+.logo {
+  height: 71px;
+  top: 51px;
+  left: 465px;
+  position: absolute;
+}
+
+.title {
+position: absolute;
+font-family: 'Montserrat', sans-serif;
+width: 406px;
+height: 59px;
+left: 546px;
+top: 26px;
+font-style: normal;
+font-weight: 250;
+font-size: 48px;
+line-height: 59px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #3D302D;
+
+}
+
+/* AUTHENTICATION */
+
+.authentication {
+  position: absolute;
+  width: 129px;
+  height: 110px;
+  left: 1257px;
+  top: 20px;
+  font-family: 'Montserrat', sans-serif;
+
+  background: #E9E1DF;
+  border-radius: 10px;
+}
+
+.autocomplete-container {
+  position: relative;
+}
+
+.dropdown {
+position: absolute;
+font-family: 'Montserrat', sans-serif;
+width: 1336px;
+height: 141px;
+left: 48px;
+top: 140px;
+padding: 0 40px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+background: #E9E1DF;
+}
+
+.dropdown-selections {
+  height: fit-content;
+  align-items: center;
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+}
+
+.date-button {
+  width: 200px !important;
+}
+
+.name-and-info-section {
+  width: 100%;
+  height: 47px;
+  display: grid;
+  align-items: center;
+  border-radius: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  grid-row: 1;
+  border: none;
+  transform: translateY(5px);
+  inline-size: fit-content;
+  grid-gap: 113px;
+}
+
+.name-and-info-item {
+  grid-row: 1;
+  display: -webkit-box;
+  grid-gap: 4px;
+  transform: translate(10px, 10px);
+}
+
+/* this next piece will override the dropdown selections ALL (*) IMMEDIATE (>) children and apply this styling, which should make adding a date dropdown quicker*/
+
+.dropdown-selections > * {
+  width: 100%;
+  height: 56px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.07));
+  grid-row: 1;
+  border: none;
+  background-color: white;
+}
+
+.dropdown-limitations {
+  width: 21px;
+  height: 45px;
+  transform: translateY(-12px);
+}
+
+.location-box {
+  position: relative;
+  left: 8%;
+  top: 18%;
+  width: 200px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  background: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.crime-box {
+  position: relative;
+  left: 25%;
+  top: 18%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  background: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.sub-box {
+  position: relative;
+  left: 40%;
+  top: 18%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  background: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.radius-box {
+  position: relative;
+  left: 52%;
+  top: 18%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  background: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.date-box {
+  position: relative;
+  left: 65%;
+  top: 18%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  image-rendering: url(https://i.imgur.com/qDvTXf9.png);
+  background: whitesmoke;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.search-icon {
+  color: #fff;
+  image-rendering: url(https://i.imgur.com/dCoTssr.png);
+}
+
+/* MAP */
+
+.map { height: 180px; }
+
+.leaflet-container {
+position: absolute;
+width: 603px;
+height: 669px;
+left: 53px;
+top: 308px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 10px;
+}
+
+/* SEARCH TABLE */
+
+table {
+  position: absolute;
+  width: 603px;
+  height: 600px;
+  left: 700px;
+  top: 308px;
+
+  background: #E5DDDB;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+table, th, tr, td {
+  border: 1px solid black;
+}
+
+th {
+  padding: right left 5px;
+  position: sticky;
+}
+
+tr:hover {
+  background-color: cadetblue;
+}
+
+.scrollTable {
+  display: block;
+  height: 575px;
+  width:fit-content;
+  overflow: auto;
+}
+
+/* FOOTER BODY */
+
+.footer {
+  position: absolute;
+  width: 680px;
+  height: 92px;
+  left: 701px;
+  top: 885px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  column-gap: 35px;
+  background: #E5DDDB;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+/* FOOTER LINKS */
+
+.footer > * {
+  width: 178px;
+  height: 44px;
+  background: #C4C4C4;
+  border-radius: 10px;
+  border: none;
+}
+
+.modal-creators {
+    width: 178px;
+    height: 44px;
+    background: #C4C4C4;
+    border-radius: 10px;
+    border: none;
+}
+
+.note {
+  left: 55px;
+  top: 985px;
+  position: absolute;
+  opacity: 0.89;
+}
