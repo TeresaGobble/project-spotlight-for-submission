@@ -179,8 +179,6 @@ background: #E9E1DF;
 
 /* MAP */
 
-.map { height: 180px; }
-
 .leaflet-container {
 position: absolute;
 width: 603px;
