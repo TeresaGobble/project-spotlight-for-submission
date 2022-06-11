@@ -1,5 +1,5 @@
 import { LatLngExpression } from "leaflet";
-import React, { useContext, useEffect, useMemo } from "react";
+import React, { useContext, useMemo } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import { CrimesContext } from "../CrimesContext";
 
