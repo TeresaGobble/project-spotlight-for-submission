@@ -30,7 +30,7 @@ const SearchTable = () => {
 
   return (
     <div>
-      <div className="table" style={{height: 550, width: '40%', borderRadius: "10px"}}>
+      <div className="table" style={{height: 1, width: '40%', borderRadius: "10px"}}>
           <DataGrid
             rows={rows}
             columns={columns}
